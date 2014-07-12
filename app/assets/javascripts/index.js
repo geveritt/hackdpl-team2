@@ -52,9 +52,8 @@ function returnClosestBranchName (position) {
 		{"name": "campbell", 	"lat": 42.308914, 	"lng": -83.133154},
 		{"name": "bowen", 		"lat": 42.323272,	"lng": -83.088836},
 		{"name": "conely",		"lat": 42.331161,   "lng": -83.127261},
-		{"name": "automotive",	"lat": 42.333902,	"lng": -83.046755},
-		{"name": "skillman",	"lat": 42.333902,	"lng": -83.046755},
-		{"name": "elmwood",		"lat": 42.340847, 	"lng": -83.023601},
+		{"name": "skillman and national automotive history collection",	"lat": 42.333902,	"lng": -83.046755, "phone":"(313) 481-1862", "hours":"M, T, W, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "elmwood park",		"lat": 42.340847, 	"lng": -83.023601},
 		{"name": "douglass",	"lat": 42.34315,	"lng": -83.074121, 		"tempClosed":true},
 		{"name": "edison",		"lat": 42.357806,	"lng": -83.220108},
 		{"name": "main",		"lat": 42.358453,	"lng": -83.06668},
@@ -62,7 +61,7 @@ function returnClosestBranchName (position) {
 		{"name": "monteith",	"lat": 42.377385,	"lng": -82.950649},
 		{"name": "chaney",		"lat": 42.395191,	"lng": -83.205282},
 		{"name": "parkman",		"lat": 42.396886,	"lng": -83.126842},
-		{"name": "chandler",	"lat": 42.401552,	"lng": -82.974305},
+		{"name": "chandler park",	"lat": 42.401552,	"lng": -82.974305},
 		{"name": "jefferson",	"lat": 42.404008,	"lng": -82.937269},
 		{"name": "redford",		"lat": 42.413423,	"lng": -83.249924, 		"tempClosed":true},
 		{"name": "knapp",		"lat": 42.41493,	"lng": -83.061059},
@@ -71,7 +70,7 @@ function returnClosestBranchName (position) {
 		{"name": "chase",		"lat": 42.430053,	"lng": -83.217493},
 		{"name": "wilder",		"lat": 42.43156,	"lng": -83.144448},
 		{"name": "lincoln",		"lat": 42.432832,	"lng": -83.090829},
-		{"name": "sherwood",	"lat": 42.433862,	"lng": -83.030151}];
+		{"name": "sherwood forest",	"lat": 42.433862,	"lng": -83.030151}];
 
 		var closest = {};
 
@@ -91,6 +90,8 @@ function returnClosestBranchName (position) {
 				if (distance < closest.dist) {
 					closest.dist = distance;
 					closest.name = locations[i].name;
+					if(!isEmpty(locations[i].hours)) closest.hours = locations[i].hours;
+					if(!isEmpty(locations[i].phone)) closest.phone = locations[i].phone;
 				}
 			}
 		} else {
@@ -98,8 +99,9 @@ function returnClosestBranchName (position) {
 		}	
 
 	console.log(closest.name);
-	//$("#events_title").text("Upcoming Events For " + closest.name + " Branch")
-	return closest.name;
+	$("#nearest_branch_name").append(closest.name + " BRANCH");
+	$("#nearest_branch_hours").text(closest.hours);
+	$("#nearest_branch_phone").text(closest.phone);
 };
 
 function pointsDistance(point1, point2) {
