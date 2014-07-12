@@ -3,11 +3,38 @@
 <div class="section_title" id="events_title">UPCOMING EVENTS</div>
 <div class="home_section" id="home_events">
 	<div class="geolocation_banner row">
-		<div class="nearest_branch_info medium-10 columns">
-			<div class="branch_prompt">Showing Events For</div>
-			<div class="nearest_branch_name" id="nearest_branch_name"></div>
-			<div id="nearest_branch_hours"></div>
-			<div id="nearest_branch_phone"></div>
+		<div class="nearest_branch_info columns">
+			Showing events for
+				<div class="row" id="accordion_row">
+					<div class="columns" id="branch-accordion">
+						<dl class="accordion" data-accordion>
+						  <dd class="accordion-navigation">
+						    <a href="#panel1"><div class="nearest_branch_name" id="nearest_branch_name"></div></a>
+						    	<div id="panel1" class="content active">
+												<div id="nearest_branch_hours"></div>
+												<div id="nearest_branch_phone"></div>
+						    	</div>
+						  </dd>
+						  <dd class="accordion-navigation">
+						    <a href="#panel2">Other Branches</a>
+						    <div id="panel2" class="content">
+					    		<ul>
+					    			<li><a href="#">Bowen</a></li>
+										<li><a href="#">Hubbard</a></li>
+										<li><a href="#">Campbell</a></li>
+										<li><a href="#">Chandler Park</a></li>
+										<li><a href="#">Knapp </a></li>
+										<li><a href="#">Chaney </a></li>
+										<li><a href="#">Lincoln </a></li>
+										<li><a href="#">Chase </a></li>
+										<li><a href="#">Monteith</a></li>
+					    		</ul>
+						    </div>
+						  </dd>
+						</dl>
+					</div>
+				</div>
+
 		</div>
 		<div class="geolocation_icon medium-2 columns"></div>
 	</div>
