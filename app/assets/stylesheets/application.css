@@ -95,8 +95,13 @@ alert-box {
 	margin: 0.40em;
 }
 
-#home_books {
+#home_books, #home_games {
 	padding-left: 8px;
+}
+
+#home_games img {
+	width: 67px;
+	height: 96px;
 }
 
 .popular_book {
