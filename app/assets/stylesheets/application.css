@@ -14,6 +14,7 @@
  *= require_tree .
  */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -44,14 +45,20 @@ body {
 	-moz-box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
 	box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
 }
+
 li {
 	border-bottom: gray solid 1px;
 	padding: 8px;
 }
 
+.orbit-bullets {
+	display: none;
+}
+
 li:last-child {
 	border-bottom: none;
 }
+
 .left_title {
 	float: left;
 	background: url('/assets/banner-left.png');
@@ -65,17 +72,49 @@ li:last-child {
 	width: 16px;
 	height: 59px;
 }
+
 .section_title {
 	background-color: #8cc63f;
 	color: white;
 	margin: 0px 14px;
 	padding: 1px 8px;
 }
-.event_body {
+
+.event_body, .news_body, .service_body {
 	padding: 9px;
 }
 
 #home_events .event_title, #home_news .news_title, #home_services .service_title {
 	color: #8cc63f;
-	font-size: 1.4rem;
+	font-size: 1.4em;
 	padding: 8px;
+	padding-bottom: 0px;
+}
+
+alert-box {
+	margin: 0.40em;
+}
+
+#home_books, #home_games {
+	padding-left: 8px;
+}
+
+#home_games img {
+	width: 67px;
+	height: 96px;
+}
+
+.popular_book {
+	float: left;
+	width: 85px;
+	padding: 9px;
+}
+
+#more_events_btn, #more_news_btn {
+	background-color: gray;
+	color: #7BBD33;
+	padding: 10px;
+	text-align: center;
+	font-size: 16pt;
+}
+
