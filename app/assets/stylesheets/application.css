@@ -248,5 +248,8 @@ p#branch-info-description {
 	display: none;
 }
 
+.nearest_branch_info.columns {
+	margin-top: -30px;
+}
 
 
