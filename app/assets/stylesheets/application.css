@@ -149,6 +149,7 @@ li:last-child {
 	color: white;
 	text-transform: uppercase;
 	line-height: 112%;
+	background: url("/assets/location.png") no-repeat top right;
 }
 
 #nearest_branch_phone {
@@ -210,7 +211,7 @@ input#search_input {
 }
 
 .accordion .accordion-navigation>a, .accordion dd>a {
-	background: #676767;
+	background: #676767 !important;
 	color: #222;
 	padding: 0rem;
 	display: block;
@@ -219,7 +220,7 @@ input#search_input {
 }
 
 .accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
-	background: #676767;
+	background: #676767 !important;
 }
 .accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
 	display: block;
