@@ -73,6 +73,10 @@ body {
 	padding: 0px;
 }
 
+#home_events ul {
+	margin: 50px;
+}
+
 .home_section ul li {
 	border-bottom: 1px solid #ccc;
 }
@@ -87,4 +91,32 @@ body {
 	height: 120px;
 	background-color: #ccc;
 	margin: 5px;
+}
+
+#search_row {
+	height: 55px;
+	background: white;
+}	
+
+#wrapper {
+	background: url('/assets/dpl_bg.png');
+}	
+#home_events ul, #home_news ul, #home_services ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.home_section {
+	background-color: white;
+	margin-bottom: 15px;
+	padding: 0px;
+	box-shadow: 0px 3px 5px 0px rgba(69,69,69,1);
+}
+li {
+	border-bottom: gray solid 1px;
+	padding: 8px;
+}
+
+li:last-child {
+	border-bottom: none;
 }
