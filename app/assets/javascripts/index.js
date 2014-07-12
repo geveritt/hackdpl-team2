@@ -50,15 +50,15 @@ function returnClosestBranchName (position) {
 	userLng = position.coords.longitude;
 
 	var locations = [
-		{"name": "campbell", 	"lat": 42.308914, 	"lng": -83.133154},
-		{"name": "bowen", 		"lat": 42.323272,	"lng": -83.088836},
-		{"name": "conely",		"lat": 42.331161,   "lng": -83.127261},
+		{"name": "campbell", 	"lat": 42.308914, 	"lng": -83.133154, 	"phone":"(313) 481-1550", 	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "bowen", 		"lat": 42.323272,	"lng": -83.088836, 	"phone":"(313) 481-1540", 	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "conely",		"lat": 42.331161,   "lng": -83.127261, 	"phone":"(313) 481-1590", 	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
 		{"name": "skillman and national automotive history collection",	"lat": 42.333902,	"lng": -83.046755, "phone":"(313) 481-1862", "hours":"M, T, W, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
-		{"name": "elmwood park",		"lat": 42.340847, 	"lng": -83.023601},
-		{"name": "douglass",	"lat": 42.34315,	"lng": -83.074121, 		"tempClosed":true},
-		{"name": "edison",		"lat": 42.357806,	"lng": -83.220108},
-		{"name": "main",		"lat": 42.358453,	"lng": -83.06668},
-		{"name": "duffield",	"lat": 42.3633,		"lng": -83.093233},
+		{"name": "elmwood park",	"lat": 42.340847, 	"lng": -83.023601, "phone":"(313) 481-1732", "hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "douglass",	"lat": 42.34315,	"lng": -83.074121, 	"address":"3666 Grand River", "tempClosed":true},
+		{"name": "edison",		"lat": 42.357806,	"lng": -83.220108, 	"phone":"(313) 481-1720", 	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "main",		"lat": 42.358453,	"lng": -83.06668,  	"phone":"(313) 481-1300", 	"hours":" T, W: 12 p.m. - 8 p.m. Th, F, Sa: 10 a.m. - 6 p.m. Su, M: CLOSED"},
+		{"name": "duffield",	"lat": 42.3633,		"lng": -83.093233, 	"phone":"(313) 481-1710", 	"address":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
 		{"name": "monteith",	"lat": 42.377385,	"lng": -82.950649},
 		{"name": "chaney",		"lat": 42.395191,	"lng": -83.205282},
 		{"name": "parkman",		"lat": 42.396886,	"lng": -83.126842},
@@ -93,6 +93,8 @@ function returnClosestBranchName (position) {
 					closest.name = locations[i].name;
 					if(!isEmpty(locations[i].hours)) closest.hours = locations[i].hours;
 					if(!isEmpty(locations[i].phone)) closest.phone = locations[i].phone;
+					if(!isEmpty(locations[i].lat)) closest.lat = locations[i].lat;
+					if(!isEmpty(locations[i].lng)) closest.lng = locations[i].lng;
 				}
 			}
 		} else {
@@ -102,7 +104,8 @@ function returnClosestBranchName (position) {
 	console.log(closest.name);
 	$("#nearest_branch_name").append(closest.name + " BRANCH");
 	$("#nearest_branch_hours").text(closest.hours);
-	$("#nearest_branch_phone").text(closest.phone);
+	$("#nearest_branch_phone").text(closest.phone).attr("href", "tel:+1" + closest.phone);
+	$("#nearest_branch_name").attr("href", "geo:" + closest.lat + "," + closest.lng).attr("target", "_blank");
 };
 
 function pointsDistance(point1, point2) {
