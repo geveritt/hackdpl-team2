@@ -58,7 +58,7 @@ body {
 	padding: 5px;
 }
 
-#home_events ul, #home_news ul {
+#home_events ul, #home_news ul, #home_services ul {
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
