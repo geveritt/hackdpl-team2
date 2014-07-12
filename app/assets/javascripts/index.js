@@ -33,6 +33,7 @@ function isEmpty (data) {
 
 function initHome () {
 	determineClosestBranch();
+	populateServicesContent();
 };
 
 function determineClosestBranch () {
@@ -116,3 +117,18 @@ function pointsDistance(point1, point2) {
  
   return Math.sqrt( xs + ys );
 }
+
+function populateServicesContent() {
+
+	var servicesContent = [
+		{"name_id":"hype-modal-name", "name_content":"Hype Teen Center", "desc_id":"hype-modal-desc", "desc_content":"Branch:  Main Welcome to HYPE, the Detroit Public Library\'s Teen Center. What\'s the HYPE? HYPE stands for Helping Young People Excel. "},
+		{"name_id":"librarian-modal-name", "name_content":"Ask A Librarian", "desc_id":"librarian-modal-desc", "desc_content":"Branch:  Main Ask-A-Librarian service is designed to provide brief, factual answers to your reference questions via e-mail or phone. "},
+		{"name_id":"read-modal-name", "name_content":"Detroit Reads!", "desc_id":"read-modal-desc", "desc_content":"Branch:  Main  Learn to read or improve your reading skills. Join the Detroit Public Library’s literacy campaign Detroit Reads!"},
+		{"name_id":"career-modal-name", "name_content":"Career and Employment Services", "desc_id":"career-modal-desc", "desc_content":"Branch:  Main Staff knowledgeable in career and employment issues is assigned full-time to the TLC Center at the Main Library to assist job seekers in choosing resources and identifying additional resources located throughout the Library system."}
+	];
+
+	for (var i=0; i<servicesContent.length; i++) {
+		$("#" + servicesContent[i].name_id).text(servicesContent[i].name_content);
+		$("#" + servicesContent[i].desc_id).text(servicesContent[i].desc_content);
+	}
+};
