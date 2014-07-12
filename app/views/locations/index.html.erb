@@ -2,20 +2,17 @@
 
 <table>
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
   </tr>
 
 <% @locations.each do |location| %>
   <tr>
-    <td><%= link_to 'Show', location %></td>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= @location.name %></td>
+    <td><%= @location.address %></td>
+    <td><%= @location.phone %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New Location', new_location_path %>
