@@ -76,7 +76,7 @@ li:last-child {
 	margin: 0px 14px;
 	padding: 1px 8px;
 }
-.event_body {
+.event_body, .news_body, .service_body {
 	padding: 9px;
 }
 
