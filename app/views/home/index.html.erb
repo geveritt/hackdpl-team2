@@ -28,13 +28,13 @@
 
 	<div class="row" id="content_row">
 		<div class="medium-8 columns">
-			<%= render :partial => 'upcoming_events' %>
-			<%= render :partial => 'news' %>
+			<a name="events_section"></a><%= render :partial => 'upcoming_events' %>
+			<a name="news_section"></a><%= render :partial => 'news' %>
 		</div>
 
 		<div class="medium-4 columns">
-			<%= render :partial=>'books_games' %>
-			<%= render :partial=>'services' %>
+			<a name="books_section"></a><%= render :partial=>'books_games' %>
+			<a name="sevices_section"></a><%= render :partial=>'services' %>
 		</div>
 	</div>
 </div>
