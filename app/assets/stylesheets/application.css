@@ -109,10 +109,6 @@ li:last-child {
 	font-family: 'Open Sans', helvetica, sans-serif;
 }
 
-.alert-box {
-	margin: 0.2rem !important;
-}
-
 #home_books, #home_games {
 	padding-left: 8px;
 }
