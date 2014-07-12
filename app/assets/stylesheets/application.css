@@ -1,0 +1,251 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require foundation_and_overrides
+
+ *= require_tree .
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.group-about-branch, .location-locations-header, .location-locations-wrapper, .field-field-map, .group-general-information, .group-special-services, .group-transportation, .group-self-check, .group-computer-equipment {
+	display: none;
+}
+
+.node-type-branch .node-title {
+	font-size: 12pt;
+}
+
+body {
+	color: #363636 !important;
+	font-family: 'Open Sans', helvetica, sans-serif !important;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+a:hover {
+	background-color: inherit;
+	color: #8cc63f !important;
+}
+
+#search_row {
+	background: white;
+	padding: 3px 0px;
+}	
+#header_row {
+	height: 100%;
+	margin-bottom: 0.3rem;
+}
+#wrapper {
+	background: url('/assets/dpl_bg.png');
+}	
+#home_events ul, #home_news ul, #home_services ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.home_section {
+	background-color: white;
+	margin: 0px 15px 15px 15px;
+	padding: 0px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
+	box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
+}
+
+li {
+	border-bottom: gray solid 1px;
+	padding: 8px;
+}
+
+.orbit-bullets {
+	display: none !important;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+.left_title {
+	float: left;
+	background: url('/assets/banner-left.png');
+	width: 15px;
+	height: 59px;
+}
+
+.right_title {
+	float: right;
+	background: url('/assets/banner-right.png') no-repeat;
+	width: 16px;
+	height: 59px;
+}
+
+.section_title {
+	background-color: #8cc63f;
+	color: white;
+	margin: 0px 14px;
+	padding: 1px 8px;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.event_body, .news_body, .service_body {
+	padding: 9px;
+}
+
+#home_events .event_title, #home_news .news_title, #home_services .service_title {
+	color: #8cc63f;
+	font-size: 1.4em;
+	padding: 8px;
+	padding-bottom: 0px;
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+#home_books, #home_games {
+	padding-left: 8px;
+}
+
+#home_games img {
+	width: 67px;
+	height: 96px;
+}
+
+.popular_book {
+	float: left;
+	width: 85px;
+	padding: 9px;
+}
+
+#more_events_btn, #more_news_btn {
+	background-color: gray;
+	color: #7BBD33;
+	padding: 10px;
+	text-align: center;
+	font-size: 16pt;
+}
+
+#more_events_btn {
+	cursor: pointer; 
+	cursor: hand;
+	font-family:'Open Sans', helvetica, sans-serif;
+}
+
+.geolocation_banner.row {
+	background: #676767;
+	margin: 0px 0px !important;
+	padding: 10px 0px;
+}
+
+#nearest_branch_name {
+	font-size: 1.3rem;
+	color: white;
+	text-transform: uppercase;
+	line-height: 112%;
+}
+
+#nearest_branch_phone {
+	color: #d3d3d3;
+}
+
+#nearest_branch_hours {
+	color: #d3d3d3;
+}
+
+.event_body {
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+.orbit-container .orbit-slides-container>* .orbit-caption {
+	font-family: 'Open Sans', helvetica, sans-serif;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(51,51,51,0.8);
+	color: #fff;
+	width: 100%;
+	padding: 0.625rem 0.875rem;
+	font-size: 0.875rem;
+}
+
+.service_body {
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+.alert-box {
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 0.3rem !important;
+	position: relative;
+	padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+	font-size: 0.8125rem;
+	transition: opacity 300ms ease-out;
+}
+
+.orbit-container .orbit-slide-number {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 12px;
+	color: #fff;
+	background: transparent;
+	z-index: 10;
+	display: none !important;
+}
+
+input#search_input {
+	margin-top: 10px;
+}
+
+#social_icons {
+	margin-top: 10px;
+}
+
+.accordion .accordion-navigation>a, .accordion dd>a {
+	background: #676767;
+	color: #222;
+	padding: 0rem;
+	display: block;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 1rem;
+}
+
+.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
+	background: #676767;
+}
+.accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
+	display: block;
+	background: inherit;
+}
+	#panel1 li {
+	border: none;
+	height: 26px;
+	font-size: 1rem;
+}
+
+#panel1 li {
+	border: none;
+	line-height: 174%;
+	font-size: 1rem;
+	background: #8cc63f;
+	padding-left: 7px;
+}
+
+#panel1 li:nth-child(2n+1) {
+	background: #ccc;
+}
+
+p#branch-info-description {
+	display: none;
+}
+
+
+
