@@ -1,33 +1,28 @@
 function isEmpty (data) {
 		
 	//Boolean and number types indicate data is not empty
-	if(typeof data === 'number' || typeof data  === 'boolean') {
-		
+	if(typeof data === 'number' || typeof data  === 'boolean') {		
 		return false;
 	}
 	
 	//Because typeof null === 'object'  yeap, that's a thing. 
-	if(typeof data === 'undefined' || data === null) {
-		
+	if(typeof data === 'undefined' || data === null) {	
 		return true;
 	}
 	
 	//Zero length strings and arrays
-	if(data.length === 0) {
-		
+	if(data.length === 0) {	
 		return true;
 	}
 	
 	//If there is a string or array that has passed the length check, it presumably
 	// has a length and contains something.  The validity of those contents is not checked.  
 	if(data.length > 0) {
-		
 		return false;
 	}
 	
 	//Not checking objects now. 
 	if(typeof data === 'object') {
-		
 		return undefined;
 	}
 	
@@ -37,12 +32,10 @@ function isEmpty (data) {
 };
 
 function initHome () {
-
 	determineClosestBranch();
 };
 
 function determineClosestBranch () {
-
 	if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(returnClosestBranchName);
     } else {
@@ -105,12 +98,11 @@ function returnClosestBranchName (position) {
 		}	
 
 	console.log(closest.name);
-	$("#events_title").text("Upcoming Events For " + closest.name + " Branch")
+	//$("#events_title").text("Upcoming Events For " + closest.name + " Branch")
 	return closest.name;
 };
 
-function pointsDistance( point1, point2 )
-{
+function pointsDistance(point1, point2) {
   var xs = 0;
   var ys = 0;
  
