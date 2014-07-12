@@ -52,6 +52,10 @@ body {
 	font-size: 12pt;
 }
 
+#search_row {
+	background-color: white;
+}
+
 .home_section {
 	background-color: white;
 	margin-bottom: 15px;
