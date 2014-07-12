@@ -76,15 +76,16 @@ li:last-child {
 	margin: 0px 14px;
 	padding: 1px 8px;
 }
-.event_body {
+.event_body, .news_body, .service_body {
 	padding: 9px;
 }
 
 #home_events .event_title, #home_news .news_title, #home_services .service_title {
 	color: #8cc63f;
-	font-size: 1.4rem;
+	font-size: 1.4em;
 	padding: 8px;
+	padding-bottom: 0px;
 }
 alert-box {
-	margin: 0.40rem;
+	margin: 0.40em;
 }
