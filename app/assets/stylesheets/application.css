@@ -19,7 +19,7 @@
 	border-bottom: 1px solid #ccc;
 }
 
-.node-type-branch {
+.group-general-information, .location-locations-wrapper {
 	display: none;
 }
 
