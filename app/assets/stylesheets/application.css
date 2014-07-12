@@ -50,6 +50,10 @@ li {
 	padding: 8px;
 }
 
+.orbit-bullets {
+	display: none;
+}
+
 li:last-child {
 	border-bottom: none;
 }
@@ -80,4 +84,7 @@ li:last-child {
 	color: #8cc63f;
 	font-size: 1.4rem;
 	padding: 8px;
+}
+alert-box {
+	margin: 0.40rem;
 }
