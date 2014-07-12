@@ -73,6 +73,10 @@ body {
 	padding: 0px;
 }
 
+#home_events .event_title, #home_news .news_title, #home_services .service_title {
+	color: green;
+}
+
 .popular_book {
 	float: left;
 	width: 87px;
