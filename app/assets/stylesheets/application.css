@@ -19,7 +19,7 @@
 	border-bottom: 1px solid #ccc;
 }
 
-.group-about-branch, .location-locations-wrapper, .location-locations-header, .field-field-map, .group-general-information {
+.group-about-branch, .location-locations-wrapper, .location-locations-header, .field-field-map, .group-general-information, .group-special-services, .group-transportation {
 	display: none;
 }
 
