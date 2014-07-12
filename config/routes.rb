@@ -1,4 +1,7 @@
 Hackdpl::Application.routes.draw do
+  resources :news_highlights
+
+
   resources :services
 
 
