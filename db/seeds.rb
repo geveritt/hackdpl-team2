@@ -1,3 +1,4 @@
+# encoding: utf-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -30,3 +31,7 @@ Location.create(:name=>'Skillman', :address=>'121 Gratiot', :phone=>'(313) 481-1
 Location.create(:name=>'Franklin', :address=>'13651 E. McNichols', :phone=>'(313) 481-1740')
 Location.create(:name=>'Wilder', :address=>'7140 E. 7 Mile Rd.', :phone=>'(313) 481-1870')
 
+Service.create(:name=>"Hype Teen Center", :description=>'Branch:  Main Welcome to HYPE, the Detroit Public Library\'s Teen Center. What\'s the HYPE? HYPE stands for Helping Young People Excel. ')
+Service.create(:name=>"Ask A Librarian", :description=>'Branch:  Main Ask-A-Librarian service is designed to provide brief, factual answers to your reference questions via e-mail or phone. ')
+Service.create(:name=>"Detroit Reads!", :description=>'Branch:  Main  Learn to read or improve your reading skills. Join the Detroit Public Library’s literacy campaign Detroit Reads!')
+Service.create(:name=>"Career and Employment services", :description=>'Branch:  Main Staff knowledgeable in career and employment issues is assigned full-time to the TLC Center at the Main Library to assist job seekers in choosing resources and identifying additional resources located throughout the Library system.')
