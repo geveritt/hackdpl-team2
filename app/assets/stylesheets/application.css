@@ -110,7 +110,7 @@ li:last-child {
 }
 
 .alert-box {
-	margin: 0.40em;
+	margin: 0.2rem !important;
 }
 
 #home_books, #home_games {
@@ -144,7 +144,7 @@ li:last-child {
 
 .geolocation_banner.row {
 	background: #676767;
-	margin: 0px 0px;
+	margin: 0px 0px !important;
 	padding: 10px 0px;
 }
 
@@ -152,6 +152,7 @@ li:last-child {
 	font-size: 1.3rem;
 	color: white;
 	text-transform: uppercase;
+	line-height: 112%;
 }
 
 #nearest_branch_phone {
