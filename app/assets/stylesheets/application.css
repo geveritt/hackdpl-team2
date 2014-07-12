@@ -109,3 +109,12 @@ alert-box {
 	width: 85px;
 	padding: 9px;
 }
+
+#more_events_btn, #more_news_btn {
+	background-color: gray;
+	color: #7BBD33;
+	padding: 10px;
+	text-align: center;
+	font-size: 16pt;
+}
+
