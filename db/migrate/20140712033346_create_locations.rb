@@ -2,7 +2,7 @@ class CreateLocations < ActiveRecord::Migration
   def change
     create_table :locations do |t|
       t.string      :name
-      t.string      :adddress
+      t.string      :address
       t.string      :phone
       t.timestamps
     end
