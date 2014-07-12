@@ -44,3 +44,4 @@ gem 'capistrano-rails'
 # gem 'debugger'
 
 gem 'foundation-rails'
+gem 'feedjira'
