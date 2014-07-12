@@ -17,3 +17,7 @@
 .event_listing {
 	margin-bottom: 20px;
 }
+
+.node-type-branch {
+	display: none;
+}
