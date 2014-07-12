@@ -12,11 +12,11 @@
 			</a>
 			<div id="hype-service-modal" class="reveal-modal" data-reveal>
 				<p>
-				  <b class="modal-name-label">Name:</b>
+				  <b class="modal-name-label">Service:</b>
 				  <div class="modal-name" id="hype-modal-name"></div>
 				</p>
 				<p>
-					<b class="modal-desc-label">Desc:</b>
+					<b class="modal-desc-label">About:</b>
 					<div class="modal-desc" id="hype-modal-desc"></div>
 				</p>
 				<a class="close-reveal-modal">&#215;</a>
@@ -33,12 +33,48 @@
 		<li>
 			<div id="librarian-service-modal" class="reveal-modal" data-reveal>
 				<p>
-				  <b class="modal-name-label">Name:</b>
+				  <b class="modal-name-label">Service:</b>
 				  <div class="modal-name" id="librarian-modal-name"></div>
 				</p>
 				<p>
-					<b class="modal-desc-label">Desc:</b>
+					<b class="modal-desc-label">About:</b>
 					<div class="modal-desc" id="librarian-modal-desc"></div>
+					<form id="lib-form">
+						<div class="row">
+							<div class="small-12 medium-6 columns">
+								<label> Name <small>* Required</small>
+									<input id="lib-name" type="text" placeholder="Name" required/>
+								</label>
+<!-- 								<small class="error">Please enter your name!</error>
+ -->							</div>
+							<div class="small-12 medium-6 columns">
+								<label> Email <small>* Required</small>
+									<input id="lib-email" type="email" placeholder="Email" required/>
+								</label>
+<!-- 								<small class="error">Please enter your email address so we can get back to you!</small>
+ -->							</div>
+						</div>
+						<div class="row">
+							<div class="small-6 columns">
+								<label> City 
+									<input id="lib-city" type="text" placeholder="City">
+								</label>
+							</div>
+							<div class="small-6 columns">
+								<label> State
+									<input id="lib-state" type="text" placeholder="State">
+								</label>
+							</div>
+						</div class="row">
+						<div class="small-12 columns">
+							<label> Question <small>* Required</small>
+								<input id="lib-question" type="text" placeholder="How may we help you?" required>
+							</label>
+<!-- 							<small class="error">Please let us know how we can help you!</small>
+ -->						</div>
+						<button type="submit">Submit</button>
+					</form>
+					<div class="modal-desc" id="librarian-modal-desc-more"></div>
 				</p>
 				<a class="close-reveal-modal">&#215;</a>
 			</div>
@@ -54,13 +90,49 @@
 		<li>
 			<div id="read-service-modal" class="reveal-modal" data-reveal>
 				<p>
-				  <b class="modal-name-label">Name:</b>
+				  <b class="modal-name-label">Service:</b>
 				  <div class="modal-name" id="read-modal-name"></div>
 				</p>
 				<p>
-					<b class="modal-desc-label">Desc:</b>
+					<b class="modal-desc-label">About:</b>
 					<div class="modal-desc" id="read-modal-desc"></div>
 				</p>
+				<form id="read-form">
+					<div class="small-12 columns">
+						<label> Name <small>* Required</small>
+							<input id="read-name" type="text" placeholder="Name" required/>
+						</label>
+					</div>
+					<div class="small-12 columns">
+						<label> Telephone
+							<input id="read-tel" type="text" placeholder="Telephone" />
+						</label>
+					</div>
+					<div class="small-12 columns">
+						<label> Cell Phone
+							<input id="read-cell" type="text" placeholder="Cell Phone" />
+						</label>
+					</div>
+					<div class="small-12 columns">
+						<label> Email 
+							<input id="read-email" type="text" placeholder="Email" />
+						</label>
+					</div>
+					<div class="small-12 columns">
+						<label> Availability <small>* Required - Please enter days and hours you are available for tutoring.</small>
+							<input id="read-availability" type="text" placeholder="Availability" required/>
+						</label>
+					</div>
+					<div class="row"><small>Are you 18 or older?</small>
+						<label for="18yes">Yes
+							<input name="18-radio-yes" type="radio" id="radio-yes" required>
+						</label>
+						<label for="18no">No
+							<input name="18-radio-no" type="radio" id="radio-no" required>
+						</label>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
 				<a class="close-reveal-modal">&#215;</a>
 			</div>
 		</li>
@@ -74,11 +146,11 @@
 		</li>
 			<div id="career-service-modal" class="reveal-modal" data-reveal>
 				<p>
-					<b class="modal-name-label">Name:</b>
+					<b class="modal-name-label">Service:</b>
 					<div class="modal-name" id="career-modal-name"></div>
 				</p>
 				<p>
-					<b class="modal-desc-label">Desc:</b>
+					<b class="modal-desc-label">About:</b>
 					<div class="modal-desc" id="career-modal-desc"></div>
 				</p>
 				<a class="close-reveal-modal">&#215;</a>

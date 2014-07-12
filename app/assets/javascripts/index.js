@@ -34,6 +34,7 @@ function isEmpty (data) {
 function initHome () {
 	determineClosestBranch();
 	populateServicesContent();
+	attachLibFormValidation();
 };
 
 function determineClosestBranch () {
@@ -124,14 +125,37 @@ function pointsDistance(point1, point2) {
 function populateServicesContent() {
 
 	var servicesContent = [
-		{"name_id":"hype-modal-name", "name_content":"Hype Teen Center", "desc_id":"hype-modal-desc", "desc_content":"Branch:  Main Welcome to HYPE, the Detroit Public Library\'s Teen Center. What\'s the HYPE? HYPE stands for Helping Young People Excel. "},
-		{"name_id":"librarian-modal-name", "name_content":"Ask A Librarian", "desc_id":"librarian-modal-desc", "desc_content":"Branch:  Main Ask-A-Librarian service is designed to provide brief, factual answers to your reference questions via e-mail or phone. "},
-		{"name_id":"read-modal-name", "name_content":"Detroit Reads!", "desc_id":"read-modal-desc", "desc_content":"Branch:  Main  Learn to read or improve your reading skills. Join the Detroit Public Library’s literacy campaign Detroit Reads!"},
-		{"name_id":"career-modal-name", "name_content":"Career and Employment Services", "desc_id":"career-modal-desc", "desc_content":"Branch:  Main Staff knowledgeable in career and employment issues is assigned full-time to the TLC Center at the Main Library to assist job seekers in choosing resources and identifying additional resources located throughout the Library system."}
+		{"name_id":"hype-modal-name", "name_content":"Hype Teen Center", "desc_id":"hype-modal-desc", "desc_content":"<p>Branch:  Main<br/>Welcome to HYPE, the Detroit Public Library's Teen Center.<br/><br/><b>What's the HYPE?</b><br/>HYPE stands for Helping Young People Excel. It is the umbrella for teen focused programs and services at the Detroit Public Library.  DPL recognizes that teens need their own space to learn, explore, or simply hang out.  Our newest HYPE Center, located at the Main library, combines digital technology with interaction, resulting in innovation and engagement that allows our teens to develop and become hyped for success.<br/><br/><b>HYPE'd for Success</b><br/>Our vision for teen services is to provide an environment that inspires our teens to strive for and achieve their highest potential!<br/><br/><b>Who Says Learning Can't Be Fun?</b></br>Check out the HYPE on the web at www.detroitpubliclibrary.org/hype, or visit the new HYPE Teen Center at the Main Library. We promise you will be motivated to excel!  For more information, please call (313) 481-1371.</p>"},
+		{"name_id":"librarian-modal-name", "name_content":"Ask A Librarian", "desc_id":"librarian-modal-desc", "desc_content":"Ask-A-Librarian service is designed to provide brief, factual answers to your reference questions via e-mail or phone. If your question is more in-depth or requires research, please plan a visit to Main Library or contact the library telephone reference center at (313) 481-1400 during regular library hours."},
+		{"name_id":"read-modal-name", "name_content":"Detroit Reads!", "desc_id":"read-modal-desc", "desc_content":"Branch:  Main  <br/><br/>Do you want to learn to read, or become a better reader?  Our tutoring is free. The books are free. At the Detroit Public Library we can help you:<br/><ul><li>To become a better reader</li><li>Learn to read</li><li>Have a tutor meet with you for two hours, one day per week</li><li>You choose the time and day the tutoring takes place</li></ul><br/><br/><b>Learner Sign Up</b><br/>Fill out this form and someone will contact you."},
+		{"name_id":"career-modal-name", "name_content":"Career and Employment Services", "desc_id":"career-modal-desc", "desc_content":"Branch:  Main <br/><br/><b>Career and Employment Assistance</b><ul><li>Job search and career exploration -- guidance in examining career and employment options and searching for gainful employment.</li><li>Information Strategy -- assistance in identifying resources appropriate to each step of the job or career search process.</li><li>Internet Job Search -- assistance in finding job ads, completing online job applications, and researching employers.</li><li>One-on-one assistance with resume preparation</li><li>Over 2,000 books for checkout including career guides; job search, resume and interview books</li><li>Test preparation materials for professional certification and licensing, GED, ASVAB, LSAT, GRE, GMAT, apprenticeship, civil service and many more</li></ul><b>Contact Information</b><br/>Technology, Literacy and Career (TLC) Center<br/>Detroit Public Library</br>5201 Woodward Avenue</br>Detroit, MI  48202<br/>(313) 481-1363 or (313) 481-1365<br/>tlc@detroitpubliclibrary.org<br/><br/><b>Hours</b><br/>Tuesday-Wednesday, Noon - 8 p.m.; Thursday-Saturday, 10 a.m. - 6 p.m.; Sunday-Monday, CLOSED."}
 	];
 
 	for (var i=0; i<servicesContent.length; i++) {
-		$("#" + servicesContent[i].name_id).text(servicesContent[i].name_content);
-		$("#" + servicesContent[i].desc_id).text(servicesContent[i].desc_content);
+		$("#" + servicesContent[i].name_id).html(servicesContent[i].name_content);
+		$("#" + servicesContent[i].desc_id).html(servicesContent[i].desc_content);
 	}
+
+
+	$("#librarian-modal-desc-more").html("Occasionally, our responses to Ask-A-Librarian questions are blocked by firewalls or spam filters. If you do not receive a response within five business days, please e-mail your question directly to: askalibrarian@detroitpubliclibrary.org from your email account.  For an Obituary or Death Notice search, please download the Obituary or Death Notice Search Request form.");
+};
+
+function attachLibFormValidation() {
+	$('#lib-form').on('valid.fndtn.abide', function() {
+  		console.log("form validated");
+  		console.log($("#lib-name").text());
+  		console.log($("#lib-email").text());
+  		console.log($("#lib-city").text());
+  		console.log($("#lib-state").text());
+  		console.log($("#lib-question").text());
+	});
+};
+
+function attachReadFormValidation() {
+	$('#read-form').on('valid.fndtn.abide', function() {
+  		console.log("form validated");
+  		console.log($("#read-name").text());
+  		console.log($("#read-availability").text());
+  		console.log($("#18-radio-yes").value());
+	});
 };
