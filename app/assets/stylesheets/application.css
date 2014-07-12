@@ -119,3 +119,8 @@ li {
 li:last-child {
 	border-bottom: none;
 }
+
+.section_title {
+	background-color: darkgreen;
+	color: white;
+}
