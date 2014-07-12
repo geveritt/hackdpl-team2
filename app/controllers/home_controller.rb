@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
   
-  def index
-    
+  #GET #/:id
+  def show
+    @service = Service.find(params[:id])
   end
   
   
