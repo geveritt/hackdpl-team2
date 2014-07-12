@@ -102,7 +102,7 @@ function returnClosestBranchName (position) {
 	console.log(closest.name);
 	$("#nearest_branch_name").append(closest.name + " BRANCH");
 	$("#nearest_branch_hours").text(closest.hours);
-	$("#nearest_branch_phone").text(closest.phone);
+	$("#nearest_branch_phone").text(closest.phone).attr("href", "tel:+" + closest.phone);
 };
 
 function pointsDistance(point1, point2) {
