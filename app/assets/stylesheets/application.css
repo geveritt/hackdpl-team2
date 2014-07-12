@@ -46,3 +46,9 @@
 .node-type-branch .node-title {
 	font-size: 12pt;
 }
+
+#home_events ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
