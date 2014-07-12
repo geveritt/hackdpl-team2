@@ -105,6 +105,7 @@ function returnClosestBranchName (position) {
 		}	
 
 	console.log(closest.name);
+	$("#eventsTitle").text("Upcoming Events For " + closest.name + " Branch")
 	return closest.name;
 };
 
