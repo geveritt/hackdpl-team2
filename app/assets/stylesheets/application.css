@@ -14,7 +14,12 @@
  *= require_tree .
  */
 
+body {
+	background-color: lightgreen;
+}
+
 #wrapper {
+	background-color: lightgreen;
 	width: 100%;
 }
 
@@ -45,6 +50,11 @@
 
 .node-type-branch .node-title {
 	font-size: 12pt;
+}
+
+.home_section {
+	background-color: white;
+	margin-bottom: 15px;
 }
 
 #home_events ul, #home_news ul {
