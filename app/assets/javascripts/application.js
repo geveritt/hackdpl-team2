@@ -20,6 +20,10 @@ $(function(){
 	$(document).foundation(); 
 	initHome();
 	
-	$('#more_events_btn').click(function() {alert('hello');});
-	$('#more_news_btn').click(function() {alert('hello');});
+	$('#more_events_btn').click(function() {
+		location.href = '/events';
+	});
+	$('#more_news_btn').click(function() {
+		location.href = '/news';
+	});
 });
