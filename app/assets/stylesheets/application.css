@@ -13,3 +13,7 @@
 
  *= require_tree .
  */
+
+.event_listing {
+	margin-bottom: 20px;
+}

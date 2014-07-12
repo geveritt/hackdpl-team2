@@ -1,5 +1,8 @@
 <h1>Library Events</h1>
 
 <% @events.each do |event| %>
-	<%= event.title %><br/>
+	<div class="event_listing">
+		<%= event.title %><br/>
+		<%= ActionView::Base.full_sanitizer.sanitize(event.summary) %>
+	</div>
 <% end %>
