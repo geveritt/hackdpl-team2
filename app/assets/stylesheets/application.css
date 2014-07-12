@@ -118,3 +118,8 @@ alert-box {
 	font-size: 16pt;
 }
 
+#more_events_btn {
+	cursor: pointer; 
+	cursor: hand;
+}
+
