@@ -32,7 +32,7 @@ body {
 }
 
 a:hover {
-	background-color: #fff !important;
+	background-color: inherit;
 	color: #8cc63f !important;
 }
 
@@ -208,3 +208,44 @@ input#search_input {
 #social_icons {
 	margin-top: 10px;
 }
+
+.accordion .accordion-navigation>a, .accordion dd>a {
+	background: #676767;
+	color: #222;
+	padding: 0rem;
+	display: block;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 1rem;
+}
+
+.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
+	background: #676767;
+}
+.accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
+	display: block;
+	background: inherit;
+}
+	#panel1 li {
+	border: none;
+	height: 26px;
+	font-size: 1rem;
+}
+
+#panel1 li {
+	border: none;
+	line-height: 174%;
+	font-size: 1rem;
+	background: #8cc63f;
+	padding-left: 7px;
+}
+
+#panel1 li:nth-child(2n+1) {
+	background: #ccc;
+}
+
+p#branch-info-description {
+	display: none;
+}
+
+
+
