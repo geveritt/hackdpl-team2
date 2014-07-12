@@ -14,101 +14,37 @@
  *= require_tree .
  */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 body {
-	background-color: lightgreen;
-}
-
-#wrapper {
-	background-color: lightgreen;
-	width: 100%;
-}
-
-.col {
-	float: left;
-}
-
-.col#col1 {
-	width: 600px;
-}
-
-.col#col2 {
-	width: 300px;
-}
-
-.event_listing {
-	margin-bottom: 20px;
-	border-bottom: 1px solid #ccc;
-}
-
-.group-about-branch, .location-locations-wrapper, .location-locations-header, .field-field-map, .group-general-information, .group-special-services, .group-transportation, .group-self-check, .group-computer-equipment {
-	display: none;
-}
-
-.field-label {
-	display: none;
-}
-
-.node-type-branch .node-title {
-	font-size: 12pt;
+	font-family: 'Open Sans', sans-serif;
+	color: #363636;
 }
 
 #search_row {
-	background-color: white;
-}
-
-#header_row {
-}
-
-.home_section {
-	background-color: white;
-	margin-bottom: 15px;
-	padding: 5px;
-}
-
-#home_events ul, #home_news ul, #home_services ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-}
-
-#home_events ul {
-	margin: 50px;
-}
-
-#home_events .event_title, #home_news .news_title, #home_services .service_title {
-	color: green;
-}
-
-.popular_book {
-	float: left;
-	width: 87px;
-	height: 120px;
-	background-color: #ccc;
-	margin: 5px;
-}
-
-#search_row {
-	height: 55px;
+	height: 64px;
 	background: white;
+	padding: 3px 0px;
 }	
-
+#header_row {
+	height: 100%;
+}
 #wrapper {
 	background: url('/assets/dpl_bg.png');
-}
-	
+}	
 #home_events ul, #home_news ul, #home_services ul {
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 }
-
 .home_section {
 	background-color: white;
-	margin-bottom: 15px;
+	margin: 0px 15px 15px 15px;
 	padding: 0px;
-	box-shadow: 0px 3px 5px 0px rgba(69,69,69,1);
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
+	box-shadow: 0px 3px 5px 0px rgba(69,69,69,0.2);
 }
-
 li {
 	border-bottom: gray solid 1px;
 	padding: 8px;
@@ -117,12 +53,30 @@ li {
 li:last-child {
 	border-bottom: none;
 }
+.left_title {
+	float: left;
+	background: url('/assets/banner-left.png');
+	width: 15px;
+	height: 59px;
+}
 
+.right_title {
+	float: right;
+	background: url('/assets/banner-right.png') no-repeat;
+	width: 16px;
+	height: 59px;
+}
 .section_title {
-	background-color: darkgreen;
+	background-color: #8cc63f;
 	color: white;
+	margin: 0px 14px;
+	padding: 1px 8px;
+}
+.event_body {
+	padding: 9px;
 }
 
-.home_section ul li {
-	padding: 5px;
-}
+#home_events .event_title, #home_news .news_title, #home_services .service_title {
+	color: #8cc63f;
+	font-size: 1.4rem;
+	padding: 8px;
