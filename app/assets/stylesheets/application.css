@@ -40,13 +40,13 @@ a:hover {
 	height: 64px;
 	background: white;
 	padding: 3px 0px;
-}	
+}
 #header_row {
 	height: 100%;
 }
 #wrapper {
 	background: url('/assets/dpl_bg.png');
-}	
+}
 #home_events ul, #home_news ul, #home_services ul {
 	list-style-type: none;
 	margin: 0px;
@@ -133,7 +133,7 @@ li:last-child {
 }
 
 #more_events_btn {
-	cursor: pointer; 
+	cursor: pointer;
 	cursor: hand;
 	font-family:'Open Sans', helvetica, sans-serif;
 }
@@ -141,22 +141,25 @@ li:last-child {
 .geolocation_banner.row {
 	background: #676767;
 	margin: 0px 0px !important;
-	padding: 10px 0px;
+	padding: 5px 0px;
 }
 
+#branch-info-description {
+font-size:24px;color:white
+}
 #nearest_branch_name {
 	font-size: 1.3rem;
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	line-height: 112%;
 }
 
 #nearest_branch_phone {
-	color: #d3d3d3;
+	color: #2C2B2B;
 }
 
 #nearest_branch_hours {
-	color: #d3d3d3;
+	color: #2C2B2B;
 }
 
 .event_body {
