@@ -14,8 +14,35 @@
   </head>
 
   <body>
-	<div id="wrapper">
-    	<%= yield %>
+	<div id="wrapper">		
+		<div class="off-canvas-wrap" data-offcanvas>
+		  <div class="inner-wrap">
+		    <nav class="tab-bar show-for-small-only">
+		      <section class="left-small">
+		        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+		      </section>
+
+		      <section class="middle tab-bar-section">
+		      </section>
+		    </nav>
+
+		    <aside class="left-off-canvas-menu">
+		      <ul class="off-canvas-list">
+		        <li><label>Content</label></li>
+		        <li><a href="#events_section">Upcoming Events</a></li>
+		        <li><a href="#news_section">News & Highlights</a></li>
+		        <li><a href="#books_section">Popular Books</a></li>
+		        <li><a href="#sevices_section">Services</a></li>
+		      </ul>
+		    </aside>
+
+		    <section class="main-section">
+		      	<%= yield %>
+		    </section>
+		  <a class="exit-off-canvas"></a>
+		  </div>
+		</div>	
+				
 	</div>
     <%= javascript_include_tag "application" %>
   </body>

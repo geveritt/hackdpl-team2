@@ -50,28 +50,28 @@ function returnClosestBranchName (position) {
 	userLng = position.coords.longitude;
 
 	var locations = [
-		{"name": "campbell", 	"lat": 42.308914, 	"lng": -83.133154},
-		{"name": "bowen", 		"lat": 42.323272,	"lng": -83.088836},
-		{"name": "conely",		"lat": 42.331161,   "lng": -83.127261},
+		{"name": "campbell", 	"lat": 42.308914, 	"lng": -83.133154, 	"phone":"(313) 481-1550", 	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "bowen", 		"lat": 42.323272,	"lng": -83.088836, 	"phone":"(313) 481-1540", 	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "conely",		"lat": 42.331161,   "lng": -83.127261, 	"phone":"(313) 481-1590", 	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
 		{"name": "skillman and national automotive history collection",	"lat": 42.333902,	"lng": -83.046755, "phone":"(313) 481-1862", "hours":"M, T, W, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
-		{"name": "elmwood park",		"lat": 42.340847, 	"lng": -83.023601},
-		{"name": "douglass",	"lat": 42.34315,	"lng": -83.074121, 		"tempClosed":true},
-		{"name": "edison",		"lat": 42.357806,	"lng": -83.220108},
-		{"name": "main",		"lat": 42.358453,	"lng": -83.06668},
-		{"name": "duffield",	"lat": 42.3633,		"lng": -83.093233},
-		{"name": "monteith",	"lat": 42.377385,	"lng": -82.950649},
-		{"name": "chaney",		"lat": 42.395191,	"lng": -83.205282},
-		{"name": "parkman",		"lat": 42.396886,	"lng": -83.126842},
-		{"name": "chandler park",	"lat": 42.401552,	"lng": -82.974305},
-		{"name": "jefferson",	"lat": 42.404008,	"lng": -82.937269},
-		{"name": "redford",		"lat": 42.413423,	"lng": -83.249924, 		"tempClosed":true},
-		{"name": "knapp",		"lat": 42.41493,	"lng": -83.061059},
-		{"name": "hubbard",		"lat": 42.416376,	"lng": -83.172729},
-		{"name": "franklin",	"lat": 42.426872,	"lng": -82.984255},
-		{"name": "chase",		"lat": 42.430053,	"lng": -83.217493},
-		{"name": "wilder",		"lat": 42.43156,	"lng": -83.144448},
-		{"name": "lincoln",		"lat": 42.432832,	"lng": -83.090829},
-		{"name": "sherwood forest",	"lat": 42.433862,	"lng": -83.030151}];
+		{"name": "elmwood park",	"lat": 42.340847, 	"lng": -83.023601, "phone":"(313) 481-1732", "hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "douglass",	"lat": 42.34315,	"lng": -83.074121, 	"address":"3666 Grand River", "tempClosed":true},
+		{"name": "edison",		"lat": 42.357806,	"lng": -83.220108, 	"phone":"(313) 481-1720", 	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "main",		"lat": 42.358453,	"lng": -83.06668,  	"phone":"(313) 481-1300", 	"hours":" T, W: 12 p.m. - 8 p.m. Th, F, Sa: 10 a.m. - 6 p.m. Su, M: CLOSED"},
+		{"name": "duffield",	"lat": 42.3633,		"lng": -83.093233, 	"phone":"(313) 481-1710", 	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "monteith",	"lat": 42.377385,	"lng": -82.950649, 	"phone":"(313) 481-1800", 	"hours":"M: 12 p.m. - 8 p.m. T: 10 a.m. - 6 p.m. W, Th, F, Sa, Su: CLOSED"},
+		{"name": "chaney",		"lat": 42.395191,	"lng": -83.205282,	"phone":"(313) 481-1570", 	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "parkman",		"lat": 42.396886,	"lng": -83.126842,	"phone":"(313) 481-1810",	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "chandler park",	"lat": 42.401552,	"lng": -82.974305, "phone":"(313) 481-1560", "hours":"W, F: 10 a.m. - 6 p.m. Th: 12 p.m. - 8 p.m. M, T, Sa, Su: CLOSED"},
+		{"name": "jefferson",	"lat": 42.404008,	"lng": -82.937269,	"phone":"(313) 481-1760",	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "redford",		"lat": 42.413423,	"lng": -83.249924, 	"phone":"(313) 481-1820",	"tempClosed":true},
+		{"name": "knapp",		"lat": 42.41493,	"lng": -83.061059,	"phone":"(313) 481-1770",	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "hubbard",		"lat": 42.416376,	"lng": -83.172729,	"phone":"(313) 481-1750",	"hours":"M, W: 12 p.m. - 8 p.m. T, Th, F: 10 a.m. - 6 p.m. Sa, Su: CLOSED"},
+		{"name": "franklin",	"lat": 42.426872,	"lng": -82.984255,	"phone":"(313) 481-1740",	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "chase",		"lat": 42.430053,	"lng": -83.217493,	"phone":"(313) 481-1580",	"hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"},
+		{"name": "wilder",		"lat": 42.43156,	"lng": -83.144448,	"phone":"(313) 481-1870",	"hours":"W: 12 p.m. - 8 p.m. Th, F:  10 a.m. - 6 p.m. M, T, Sa, Su: CLOSED"},
+		{"name": "lincoln",		"lat": 42.432832,	"lng": -83.090829, 	"phone":"(313) 481-1780",	"hours":"M: 12 p.m. - 8 p.m. T: 10 a.m. - 6 p.m. W, Th, F, Sa, Su: CLOSED"},
+		{"name": "sherwood forest",	"lat": 42.433862,	"lng": -83.030151, "phone":"(313) 481-1840", "hours":"M, W, F: 10 a.m. - 6 p.m. T, Th: 12 p.m. - 8 p.m. Sa, Su: CLOSED"}];
 
 		var closest = {};
 
@@ -93,6 +93,8 @@ function returnClosestBranchName (position) {
 					closest.name = locations[i].name;
 					if(!isEmpty(locations[i].hours)) closest.hours = locations[i].hours;
 					if(!isEmpty(locations[i].phone)) closest.phone = locations[i].phone;
+					if(!isEmpty(locations[i].lat)) closest.lat = locations[i].lat;
+					if(!isEmpty(locations[i].lng)) closest.lng = locations[i].lng;
 				}
 			}
 		} else {
@@ -102,7 +104,8 @@ function returnClosestBranchName (position) {
 	console.log(closest.name);
 	$("#nearest_branch_name").append(closest.name + " BRANCH");
 	$("#nearest_branch_hours").text(closest.hours);
-	$("#nearest_branch_phone").text(closest.phone);
+	$("#nearest_branch_phone").text(closest.phone).attr("href", "tel:+1" + closest.phone);
+	$("#nearest_branch_name").attr("href", "geo:" + closest.lat + "," + closest.lng).attr("target", "_blank");
 };
 
 function pointsDistance(point1, point2) {
