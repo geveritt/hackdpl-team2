@@ -124,3 +124,7 @@ li:last-child {
 	background-color: darkgreen;
 	color: white;
 }
+
+.home_section ul li {
+	padding: 5px;
+}
