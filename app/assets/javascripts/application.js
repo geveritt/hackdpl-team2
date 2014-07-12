@@ -16,4 +16,14 @@
 //= require_tree .
 //= require index
 
-$(function(){ $(document).foundation(); initHome();});
+$(function(){ 
+	$(document).foundation(); 
+	initHome();
+	
+	$('#more_events_btn').click(function() {
+		location.href = '/events';
+	});
+	$('#more_news_btn').click(function() {
+		location.href = '/news';
+	});
+});

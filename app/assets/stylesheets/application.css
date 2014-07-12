@@ -16,9 +16,19 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+.group-about-branch, .location-locations-header, .location-locations-wrapper, .field-field-map, .group-general-information, .group-special-services, .group-transportation, .group-self-check, .group-computer-equipment {
+	display: none;
+}
+
+.node-type-branch .node-title {
+	font-size: 12pt;
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
 	color: #363636;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
 }
 
 #search_row {
@@ -91,7 +101,7 @@ li:last-child {
 	padding-bottom: 0px;
 }
 
-alert-box {
+.alert-box {
 	margin: 0.40em;
 }
 
@@ -116,5 +126,10 @@ alert-box {
 	padding: 10px;
 	text-align: center;
 	font-size: 16pt;
+}
+
+#more_events_btn {
+	cursor: pointer; 
+	cursor: hand;
 }
 
