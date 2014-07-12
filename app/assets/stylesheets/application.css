@@ -26,3 +26,7 @@
 .field-label {
 	display: none;
 }
+
+.node-type-branch .node-title {
+	font-size: 12pt;
+}

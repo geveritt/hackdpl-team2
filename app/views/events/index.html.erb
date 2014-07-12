@@ -2,7 +2,7 @@
 
 <% @events.each do |event| %>
 	<div class="event_listing">
-		<%= event.title %><br/>
+		<h4><%= event.title %></h4>
 		<%= event.summary.html_safe %>
 	</div>
 <% end %>
