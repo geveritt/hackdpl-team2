@@ -32,17 +32,17 @@ body {
 }
 
 a:hover {
-	background-color: #000;
-	color: #8cc63f;
+	background-color: inherit;
+	color: #8cc63f !important;
 }
 
 #search_row {
-	height: 64px;
 	background: white;
 	padding: 3px 0px;
 }	
 #header_row {
 	height: 100%;
+	margin-bottom: 0.3rem;
 }
 #wrapper {
 	background: url('/assets/dpl_bg.png');
@@ -149,6 +149,7 @@ li:last-child {
 	color: white;
 	text-transform: uppercase;
 	line-height: 112%;
+	background: url("/assets/location.png") no-repeat top right;
 }
 
 #nearest_branch_phone {
@@ -177,3 +178,78 @@ li:last-child {
 .service_body {
 	font-family: 'Open Sans', helvetica, sans-serif;
 }
+
+.alert-box {
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 0.3rem !important;
+	position: relative;
+	padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+	font-size: 0.8125rem;
+	transition: opacity 300ms ease-out;
+}
+
+.orbit-container .orbit-slide-number {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 12px;
+	color: #fff;
+	background: transparent;
+	z-index: 10;
+	display: none !important;
+}
+
+input#search_input {
+	margin-top: 10px;
+}
+
+#social_icons {
+	margin-top: 10px;
+}
+
+.accordion .accordion-navigation>a, .accordion dd>a {
+	background: #676767 !important;
+	color: #222;
+	padding: 0rem;
+	display: block;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: 1rem;
+}
+
+.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
+	background: #676767 !important;
+}
+.accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
+	display: block;
+	background: inherit;
+}
+	#panel1 li {
+	border: none;
+	height: 26px;
+	font-size: 1rem;
+}
+
+#panel1 li {
+	border: none;
+	line-height: 174%;
+	font-size: 1rem;
+	background: #8cc63f;
+	padding-left: 7px;
+}
+
+#panel1 li:nth-child(2n+1) {
+	background: #ccc;
+}
+
+p#branch-info-description {
+	display: none;
+}
+
+.nearest_branch_info.columns {
+	margin-top: -30px;
+}
+
+
